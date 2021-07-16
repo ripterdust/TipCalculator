@@ -6,6 +6,14 @@ export const Result = ({dataProp}) => {
     
     const { data, setData } = dataProp;
     let { tip, bill, people } = data;
+
+    const buttonHandle = () => {
+        setData({
+            tip: 0,
+            bill: 0,
+            people: 0
+        })
+    }
     return <>
         <div>
             <div className="info">
@@ -15,7 +23,7 @@ export const Result = ({dataProp}) => {
                 </div>
                 <div className="numbers">
                     <DollarSvg />
-                    <span>{(bill / 100) * tip}</span>
+                    <span>{parseFloat((bill / 100) * tip).toFixed(2)}</span>
                 </div>
             </div>
             <div className="info">
@@ -25,11 +33,11 @@ export const Result = ({dataProp}) => {
                 </div>
                 <div className="numbers">
                     <DollarSvg />
-                    <span>{ (bill / 100) * tip * people}</span>
+                    <span>{ parseFloat((bill / 100) * tip * people).toFixed(2)}</span>
                 </div>
             </div>
         </div>
-        <button >Reset</button>
+        <button onClick={buttonHandle}>Reset</button>
 
     </>
 }
