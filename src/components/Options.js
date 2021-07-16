@@ -3,22 +3,31 @@ import { Tip } from './Tip'
 import { DollarSvg } from './DollarSvg'
 import { ValueContext } from './ValueContext';
 
-export const Options = () => {
+export const Options = React.memo(() => {
 
-    const dataContext = useContext(ValueContext);
-    console.log(dataContext);
+    const { contextData, setContextData } = useContext(ValueContext);
     
     const [data, setData] = useState({
         bill: 0,
         people: 0
     });
 
+    
+    const changeContext = () => {
+        let { bill, people} = data;
+        setContextData({
+            ...contextData,
+            bill,
+            people,
+        })
+    }
 
     const handleInput = ({ target }) => {
         setData({
             ...data,
             [target.name] : parseInt(target.value)
         })
+        changeContext()
     };
 
     const clearInput = ({ target }) => {
@@ -60,4 +69,4 @@ export const Options = () => {
             </div> 
         </>
 
-}
+})

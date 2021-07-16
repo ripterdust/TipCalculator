@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const Tip = () => {
+export const Tip = React.memo(() => {
 
     const [porcentage, setPorcentage] = useState({
         porcentage: 0
@@ -46,4 +46,4 @@ export const Tip = () => {
             <input type="number" id='inputTip' placeholder='Custom' onChange={handleInputChange} />
         </div>
     </div>
-}
+})
