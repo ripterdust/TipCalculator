@@ -2,10 +2,13 @@ import React from 'react'
 import { DollarSvg } from './DollarSvg'
 
 
-export const Result = ({data}) => {
+export const Result = ({dataProp}) => {
     
-    let {bill, tip, people} = data;
-
+    const { data, setData } = dataProp;
+    let bill = 0;
+    let people = 0;
+    let tip = 0;
+    console.log(data)
     return <>
         <div>
             <div className="info">
@@ -15,7 +18,7 @@ export const Result = ({data}) => {
                 </div>
                 <div className="numbers">
                     <DollarSvg />
-                    <span>{tip}</span>
+                    <span>{(bill / 100) * tip}</span>
                 </div>
             </div>
             <div className="info">
@@ -29,7 +32,7 @@ export const Result = ({data}) => {
                 </div>
             </div>
         </div>
-        <button>Reset</button>
+        <button >Reset</button>
 
     </>
 }
