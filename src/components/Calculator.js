@@ -12,7 +12,7 @@ export const Calculator = () => {
 
     return <div className="calculator">
         <div className="options" >
-            <Options setData={setData} />
+            <Options dataProp={{data, setData}} />
         </div>
         <div className="results">
             <Result dataProp={{ data, setData}}/>

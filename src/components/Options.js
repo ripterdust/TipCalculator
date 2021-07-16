@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Tip } from './Tip'
 import { DollarSvg } from './DollarSvg'
 
-export const Options = ({ setData }) => {
+export const Options = ({ dataProp }) => {
 
+    const { data, setData }  = dataProp;
     
-    const [state, setState] = useState({
-        bill: 0,
-        people: 0
-    });
-
     
     const handleInput = ({ target }) => {
         
-        setState(state => ({
+        setData(state => ({
             ...state,
             [target.name]: target.value
         }))
         
     };
 
-    let { bill, people} = state;
-
-    useEffect(() => {
-
-        let { bill, people} = state;
-        setData(data => ({
-            ...data,
-            bill,
-            people
-        }))
-    }, [state, setData])
+    let { bill, people} = data;
 
     
    
