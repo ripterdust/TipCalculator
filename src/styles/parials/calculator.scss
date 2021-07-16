@@ -15,7 +15,7 @@
     }
 
     .calculator{
-        width: 40%;
+        width: 45%;
         height: 20%;
         background: $white;
         border-radius: 20px;
@@ -73,15 +73,34 @@
     .tip{
         margin: 1em 0;
         .buttons{
+            margin-top: .7em;
             width: 100%;
             display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 1em;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: .5em;
             grid-template-rows: auto auto;
+            row-gap: .5em;
 
+            
             div, input {
                 width: 100%;
                 font-size: 20px;
+                border-radius: 3px;
+                text-align: center;
+                padding: .2em 0;
+            }
+            
+            div{
+                background: $veryDarkCyan;
+                color: $white;
+                cursor: pointer;
+            }
+
+            input{
+                text-align: center;
+                font-size: 18px;
+                padding: 3px 0;
+            
             }
         }
     }
