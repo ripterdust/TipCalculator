@@ -21,7 +21,7 @@
         border-radius: 20px;
         margin-top: 3em;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(auto-fill, minmax(min(50%, 25em), 100%));
         padding: 1.5em 2.5em;
         column-gap: 1em;
         .options{
