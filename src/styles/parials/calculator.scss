@@ -73,11 +73,12 @@
             height: 100%;
             background-color: $veryDarkCyan;
             border-radius: 15px;
-            padding: 1em 1.5em;
+            padding: 2em 1.5em 1em 1.5em;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
+            min-height: 300px;
             
             div, button{
                 width: 100%;
@@ -87,7 +88,8 @@
             .info{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-
+                font-weight: 700;
+                margin-bottom: 1em;
                 .text{
                     color: $white;
                     font-size: 13px;
@@ -97,6 +99,18 @@
                     flex-direction: column;
                     .small{
                         font-size: 12px;
+                        color: $grayCyan2;
+                    }
+                }
+
+                .numbers{
+                    color: $primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-size: 30px;
+                        margin-left: 5px;
                     }
                 }
 

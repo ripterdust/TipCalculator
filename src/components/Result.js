@@ -7,7 +7,7 @@ export const Result = () => {
         <div>
             <div className="info">
                 <div className="text">
-                    <span>Tip amount</span>
+                    <span>Tip Amount</span>
                     <span className="small">/ person</span>
                 </div>
                 <div className="numbers">
