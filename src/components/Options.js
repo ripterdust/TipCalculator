@@ -22,15 +22,8 @@ export const Options = ({ setData }) => {
 
     let { bill, people} = state;
 
-    useEffect(() => {
-
-        let { bill, people} = state;
-        setData(data => ({
-            ...data,
-            bill,
-            people
-        }))
-    }, [state, setData])
+    u
+    
 
     
    
@@ -49,7 +42,7 @@ export const Options = ({ setData }) => {
                     <DollarSvg />
                 </div>
             </div>
-            <Tip />
+            <Tip setData={setData}/>
             <div className="inputs people">
                 <span>Number of people { people <= 0 ? <span className='red'>Can't be 0</span> : '' } </span>
                 <div className="">

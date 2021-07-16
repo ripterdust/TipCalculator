@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-export const Tip = React.memo(() => {
+export const Tip = React.memo(({ setData }) => {
 
     const [porcentage, setPorcentage] = useState({
-        porcentage: 0
+        tip: 0
     });
+
+    useEffect(() => {
+        setData(data => ({
+            ...data,
+            tip: porcentage.tip
+        }))
+    }, [setData, porcentage])
 
     const removeClasess = () => {
         let elements = document.getElementsByClassName('btn');
@@ -21,7 +28,7 @@ export const Tip = React.memo(() => {
 
         setPorcentage({
             ...porcentage,
-            porcentage: p
+            tip: p
         })
     };
 
@@ -29,7 +36,7 @@ export const Tip = React.memo(() => {
         removeClasess();
         setPorcentage({
             ...porcentage,
-            porcentage: parseInt(target.value)
+            tip: parseInt(target.value)
         })
     }
 
