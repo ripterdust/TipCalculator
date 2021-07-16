@@ -1,0 +1,8 @@
+import { createContext } from "react";
+
+
+export const ValueContext = createContext(null);
+
+export const defaultValues = {
+
+}
