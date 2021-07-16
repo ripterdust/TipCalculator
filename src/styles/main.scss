@@ -23,6 +23,9 @@
 
 @media screen and (max-width: 1000px){
 
+    body{
+        padding: 1.5em 0;
+    }
     .calculator{
         width: 55%;
         column-gap: 0;
@@ -31,6 +34,9 @@
 }
 @media screen and (max-width: 900px){
 
+    body{
+        padding: 1.5em 0;
+    }
     .calculator{
         width: 90%;
         column-gap: 0;
