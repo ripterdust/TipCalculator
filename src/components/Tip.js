@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Tip = () => {
 
+    const [porcentage, setPorcentage] = useState({
+        porcentage: 0
+    });
 
     const removeClasess = () => {
         let elements = document.getElementsByClassName('btn');
@@ -14,6 +17,10 @@ export const Tip = () => {
     const clickDiv = (e, p) => {
         removeClasess();
         document.querySelector(`#btn${p}`).classList.add('active');
+        setPorcentage({
+            ...porcentage,
+            porcentage: p
+        })
     };
 
     return <div className="tip">
