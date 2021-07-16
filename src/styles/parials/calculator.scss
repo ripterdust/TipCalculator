@@ -94,13 +94,19 @@
                 background: $veryDarkCyan;
                 color: $white;
                 cursor: pointer;
+
+                &:active{
+                    background-color: $lGrayCyan;
+                    color: $veryDarkCyan;
+                }
+
             }
 
             input{
                 text-align: center;
                 font-size: 18px;
                 padding: 3px 0;
-            
+                font-weight: 700;
             }
         }
     }
