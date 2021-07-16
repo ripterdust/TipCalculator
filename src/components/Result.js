@@ -14,6 +14,9 @@ export const Result = ({dataProp}) => {
             people: 0
         })
     }
+
+    let tipAmount = parseFloat((bill / 100) * tip).toFixed(2);
+    let total = parseFloat((bill/100) * tip * people).toFixed(2);
     return <>
         <div>
             <div className="info">
@@ -23,7 +26,7 @@ export const Result = ({dataProp}) => {
                 </div>
                 <div className="numbers">
                     <DollarSvg />
-                    <span>{parseFloat((bill / 100) * tip).toFixed(2)}</span>
+                    <span>{tipAmount}</span>
                 </div>
             </div>
             <div className="info">
@@ -33,7 +36,7 @@ export const Result = ({dataProp}) => {
                 </div>
                 <div className="numbers">
                     <DollarSvg />
-                    <span>{ parseFloat((bill / 100) * tip * people).toFixed(2)}</span>
+                    <span>{ total }</span>
                 </div>
             </div>
         </div>
