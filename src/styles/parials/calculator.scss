@@ -79,9 +79,24 @@
             align-items: center;
             flex-direction: column;
             
-            div{
+            div, button{
                 width: 100%;
             }
+
+
+            .info{
+                
+            }
+            button{
+                border: none;
+                background-color: lighten($color: $veryDarkCyan, $amount: 7);
+                padding: .5em 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $veryDarkCyan;
+            }
+
+
         }
     }
 
@@ -116,7 +131,7 @@
                 }
 
             }
-
+            
             input{
                 text-align: center;
                 font-size: 18px;
