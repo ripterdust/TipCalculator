@@ -8,14 +8,16 @@
 
     .title{
         color: $veryDarkCyan;
-        letter-spacing: 2px;
-        font-weight: 400;
+        letter-spacing: 7px;
+        font-weight: 700;
+        font-style: bold;
+        text-align: center;
     }
     .calculator{
         width: 700px;
         height: 20%;
         background: $white;
         border-radius: 20px;
-        margin-top: 1em;
+        margin-top: 3em;
     }
 }
