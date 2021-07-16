@@ -41,12 +41,16 @@
                 border-radius: 10px;
                 color: $veryDarkCyan;
                 font-weight: 700;
+
+                &:focus{
+                    outline-color: $primary;
+                }
             }
 
             .inputs{
                 display: flex;
                 flex-direction: column;
-                
+
                 input{
                     text-align: right;
                     padding: 3px 7px;  
