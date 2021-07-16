@@ -1,3 +1,19 @@
-.calculator{
-    
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vw;
+    width: 100vh;
+
+    .title{
+        color: $veryDarkCyan;
+    }
+    .calculator{
+        width: 700px;
+        height: 20%;
+        background: $white;
+        border-radius: 20px;
+        margin-top: 1em;
+    }
 }

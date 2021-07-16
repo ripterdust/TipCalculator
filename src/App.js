@@ -6,7 +6,7 @@ import './styles/main.scss'
 export const App = () => {
     return (
         <div className="main_container">
-            <span>SPLI<br/>TTER</span>
+            <span className="title">SPLI<br/>TTER</span>
             <Calculator />
         </div>
     )
