@@ -51,10 +51,22 @@
                 display: flex;
                 flex-direction: column;
 
-                input{
-                    text-align: right;
-                    padding: 3px 7px;  
+                div {
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        left: .5em;
+                        top: .5em;
+                        
+                    }
+
+                    input{
+                        width: 100%;
+                        text-align: right;
+                        padding: 3px 7px;  
+                    }
                 }
+
             }
         }
     }
