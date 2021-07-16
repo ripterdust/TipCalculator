@@ -1,5 +1,4 @@
 import React from 'react'
-import { DollarSvg } from './DollarSvg'
 import { Options } from './Options'
 
 
