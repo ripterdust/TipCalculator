@@ -141,6 +141,12 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 color: $veryDarkCyan;
+                cursor: pointer;
+            }
+
+            .btnActive{
+                transition: .2s ease-in;
+                background-color: $primary;
             }
 
 
