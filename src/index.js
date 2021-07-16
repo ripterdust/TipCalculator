@@ -7,7 +7,7 @@ import { ValueContext, defaultValues } from './components/ValueContext';
 
 ReactDOM.render(
   <React.StrictMode>
-      <ValueContext.Provider>
+      <ValueContext.Provider value={defaultValues}>
         <App />
       </ValueContext.Provider>
   </React.StrictMode>,
