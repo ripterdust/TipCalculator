@@ -53,7 +53,7 @@ export const Options = ({ setData }) => {
             <div className="inputs people">
                 <span>Number of people { people <= 0 ? <span className='red'>Can't be 0</span> : '' } </span>
                 <div className="">
-                    <input type="text" 
+                    <input type="number" 
                     name='people' 
                     value={people} 
                     onChange={handleInput}
