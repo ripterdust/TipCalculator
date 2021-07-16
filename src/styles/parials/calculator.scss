@@ -23,6 +23,13 @@
         margin-top: 3em;
         display: grid;
         grid-template-columns: 50% 50%;
-        
+
+        .options{
+            .inputs{
+                span{
+                    font-size: 10px;
+                }
+            }
+        }
     }
 }

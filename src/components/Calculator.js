@@ -22,12 +22,12 @@ export const Calculator = () => {
                     <input type="text" placeholder='Custom' />
                 </div>
             </div>
-            <div className="people">
+            <div className="inputs people">
                 <span>Number of people</span>
                 <input type="text" />
             </div>
         </div>
-        <div className=" inputs results">
+        <div className="results">
             Acá irá el resultado
         </div>
     </div>
