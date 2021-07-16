@@ -10,18 +10,28 @@ export const Tip = () => {
         let elements = document.getElementsByClassName('btn');
         for(let i = 0; i< elements.length; i++){
             elements[i].classList.remove('active');
-        }
-        
+        }        
     }
 
     const clickDiv = (e, p) => {
         removeClasess();
+
+        document.querySelector('#inputTip').value = ''
         document.querySelector(`#btn${p}`).classList.add('active');
+
         setPorcentage({
             ...porcentage,
             porcentage: p
         })
     };
+
+    const handleInputChange = ({ target }) => {
+        removeClasess();
+        setPorcentage({
+            ...porcentage,
+            porcentage: target.value
+        })
+    }
 
     return <div className="tip">
         <span>
@@ -33,7 +43,7 @@ export const Tip = () => {
             <div className="btn" id='btn15' onClick={e => clickDiv(e, 15)}>15%</div>
             <div className="btn" id='btn25' onClick={e => clickDiv(e, 25)}>25%</div>
             <div className="btn" id='btn50' onClick={e => clickDiv(e, 50)}>50%</div>
-            <input type="text" placeholder='Custom' />
+            <input type="number" id='inputTip' placeholder='Custom' onChange={handleInputChange} />
         </div>
     </div>
 }
