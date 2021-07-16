@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Tip } from './Tip'
 import { DollarSvg } from './DollarSvg'
+import { ValueContext } from './ValueContext';
 
 export const Options = () => {
 
+    const dataContext = useContext(ValueContext);
+    console.log(dataContext);
+    
     const [data, setData] = useState({
         bill: 0,
         people: 0
