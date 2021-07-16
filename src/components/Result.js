@@ -5,10 +5,7 @@ import { DollarSvg } from './DollarSvg'
 export const Result = ({dataProp}) => {
     
     const { data, setData } = dataProp;
-    let bill = 0;
-    let people = 0;
-    let tip = 0;
-    console.log(data)
+    let { tip, bill, people } = data;
     return <>
         <div>
             <div className="info">
