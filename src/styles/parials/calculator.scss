@@ -15,15 +15,14 @@
     }
 
     .calculator{
-        width: 45%;
         height: 20%;
         background: $white;
         border-radius: 20px;
         margin-top: 3em;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(50%, 25em), 100%));
         padding: 1.5em 2.5em;
         column-gap: 1em;
+        row-gap: 1em;
         .options{
 
             span{

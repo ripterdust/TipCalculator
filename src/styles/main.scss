@@ -10,3 +10,30 @@
 
 // Calculator 
 @import './parials/calculator.scss';
+
+
+@media screen and (min-width: 800px){
+
+    .calculator{
+        width: 45%;
+        column-gap: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .calculator{
+        width: 55%;
+        column-gap: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 900px){
+
+    .calculator{
+        width: 90%;
+        column-gap: 0;
+        grid-template-columns: 1fr;
+    }
+}
