@@ -138,7 +138,6 @@
             column-gap: .5em;
             grid-template-rows: auto auto;
             row-gap: .5em;
-
             
             div, input {
                 width: 100%;
@@ -152,12 +151,12 @@
                 background: $veryDarkCyan;
                 color: $white;
                 cursor: pointer;
-
-                &:active{
-                    background-color: $lGrayCyan;
-                    color: $veryDarkCyan;
-                }
-
+                
+            }
+            
+            .active{
+                background-color: $lGrayCyan;
+                color: $veryDarkCyan;
             }
             
             input{
