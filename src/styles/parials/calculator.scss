@@ -57,7 +57,6 @@
                         position: absolute;
                         left: .5em;
                         top: .5em;
-                        
                     }
 
                     input{
@@ -68,6 +67,15 @@
                 }
 
             }
+        }
+    }
+
+    .tip{
+        .buttons{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 1em;
+            grid-template-rows: auto auto;
         }
     }
 }
