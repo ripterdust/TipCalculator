@@ -22,8 +22,15 @@ export const Options = ({ setData }) => {
 
     let { bill, people} = state;
 
-    u
-    
+    useEffect(() => {
+
+        let { bill, people} = state;
+        setData(data => ({
+            ...data,
+            bill,
+            people
+        }))
+    }, [state, setData])
 
     
    
