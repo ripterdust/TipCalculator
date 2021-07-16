@@ -7,7 +7,8 @@ export const Calculator = () => {
     const [data, setData] = useState({
         bill: 0,
         tip: 0,
-        people: 0
+        people: 0,
+        active: false
     });
 
     return <div className="calculator">

@@ -66,6 +66,25 @@
                 }
 
             }
+
+            .people{
+                position: relative;
+
+                .red{
+                    color: red;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .morePeople{
+                    border: 1px solid red;
+                    &:focus{
+                        outline-color: red;
+                    }
+                }
+            }
+
         }
 
         .results{
