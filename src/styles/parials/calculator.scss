@@ -85,7 +85,21 @@
 
 
             .info{
-                
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .text{
+                    color: $white;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: left;
+                    flex-direction: column;
+                    .small{
+                        font-size: 12px;
+                    }
+                }
+
             }
             button{
                 border: none;

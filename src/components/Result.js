@@ -8,7 +8,7 @@ export const Result = () => {
             <div className="info">
                 <div className="text">
                     <span>Tip</span>
-                    <span>/ person</span>
+                    <span className="small">/ person</span>
                 </div>
                 <div className="numbers">
                     <DollarSvg />
@@ -18,7 +18,7 @@ export const Result = () => {
             <div className="info">
                 <div className="text">
                     <span>Total</span>
-                    <span>/ person</span>
+                    <span className="small">/ person</span>
                 </div>
                 <div className="numbers">
                     <DollarSvg />
