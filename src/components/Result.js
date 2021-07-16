@@ -17,6 +17,8 @@ export const Result = ({dataProp}) => {
 
     let tipAmount = parseFloat((bill / 100) * tip).toFixed(2);
     let total = parseFloat((bill/100) * tip * people).toFixed(2);
+
+
     return <>
         <div>
             <div className="info">
@@ -40,7 +42,7 @@ export const Result = ({dataProp}) => {
                 </div>
             </div>
         </div>
-        <button onClick={buttonHandle}>Reset</button>
+        <button className={total > 0 ? 'btnActive' : ''} onClick={buttonHandle}>Reset</button>
 
     </>
 }
