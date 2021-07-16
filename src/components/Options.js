@@ -11,7 +11,7 @@ export const Options = () => {
                     Bill
                 </span>
                 <div className="">
-                    <input type="text" name="bill" name='bill'/>
+                    <input type="text" name="bill" />
                     <DollarSvg />
                 </div>
             </div>
