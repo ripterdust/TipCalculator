@@ -1,15 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Options } from './Options'
 import { Result } from './Result'
 
 
 export const Calculator = () => {
+    const [data, setData] = useState({
+        bill: 0,
+        tip: 0,
+        people: 0
+    });
+
     return <div className="calculator">
-        <div className="options">
-            <Options />
+        <div className="options" >
+            <Options setData={setData} />
         </div>
         <div className="results">
-            <Result />
+            <Result data={data}/>
         </div>
     </div>
 }
