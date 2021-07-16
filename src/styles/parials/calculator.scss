@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
 
     .title{
@@ -23,12 +22,25 @@
         margin-top: 3em;
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 1.5em 2.5em;
 
         .options{
             .inputs{
+                display: flex;
+                flex-direction: column;
                 span{
-                    font-size: 10px;
+                    font-size: 13px;
+                    margin-bottom: .5em;
+                    color: $veryDarkCyan;
+                    
                 }
+                input{
+                    width: 80%;
+                    font-size: 20px;
+                    text-align: right;
+                    padding: 3px;
+                }
+                
             }
         }
     }
