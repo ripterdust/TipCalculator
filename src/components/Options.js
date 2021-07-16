@@ -17,7 +17,7 @@ export const Options = () => {
     const handleInput = ({ target }) => {
         setData({
             ...data,
-            [target.name] : target.value
+            [target.name] : parseInt(target.value)
         })
     };
 
@@ -36,7 +36,7 @@ export const Options = () => {
                     Bill
                 </span>
                 <div className="">
-                    <input type="text" 
+                    <input type="number" 
                     name="bill" 
                     value={data.bill} 
                     onChange={handleInput}
@@ -49,7 +49,7 @@ export const Options = () => {
             <div className="inputs people">
                 <span>Number of people</span>
                 <div className="">
-                    <input type="text" 
+                    <input type="number" 
                     name='people' 
                     value={data.people} 
                     onChange={handleInput}

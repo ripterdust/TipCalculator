@@ -29,7 +29,7 @@ export const Tip = () => {
         removeClasess();
         setPorcentage({
             ...porcentage,
-            porcentage: target.value
+            porcentage: parseInt(target.value)
         })
     }
 
