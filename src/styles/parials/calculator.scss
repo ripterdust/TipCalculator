@@ -15,7 +15,7 @@
     }
 
     .calculator{
-        width: 50%;
+        width: 40%;
         height: 20%;
         background: $white;
         border-radius: 20px;
@@ -71,11 +71,18 @@
     }
 
     .tip{
+        margin: 1em 0;
         .buttons{
+            width: 100%;
             display: grid;
             grid-template-columns: auto auto auto;
             column-gap: 1em;
             grid-template-rows: auto auto;
+
+            div, input {
+                width: 100%;
+                font-size: 20px;
+            }
         }
     }
 }
